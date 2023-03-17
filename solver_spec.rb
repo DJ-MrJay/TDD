@@ -18,4 +18,18 @@ describe Solver do
       expect { Solver.new.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
+
+  describe '#reverse' do
+    it 'returns "olleh" when given "hello"' do
+      expect(Solver.new.reverse('hello')).to eq('olleh')
+    end
+
+    it 'returns "" when given ""' do
+      expect(Solver.new.reverse('')).to eq('')
+    end
+  end
+end
+
+describe Solver do
+  
 end
